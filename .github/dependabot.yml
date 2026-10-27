@@ -1,0 +1,12 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    # Set this to a large positive number instead of -1
+    open-pull-requests-limit: 99 
+    groups:
+      all-dependencies:
+        patterns:
+          - "*"
